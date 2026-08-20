@@ -22,7 +22,7 @@ export const Route = createFileRoute('/catalog')({
 });
 
 function Catalog() {
-  const [priceRange, setPriceRange] = useState([0, 300000]);
+  const [priceRange, setPriceRange] = useState<number[]>([0, 300000]);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   // Mock data for catalog
@@ -141,18 +141,18 @@ function Catalog() {
                   <div>
                     <div className="flex justify-between items-center mb-2">
                       <label className="text-sm font-semibold">Preço Máximo</label>
-                    <span className="text-xs text-primary font-bold">R$ {priceRange[1]?.toLocaleString() ?? '0'}</span>
-                  </div>
-                  <Slider 
-                    defaultValue={[300000]} 
-                    max={500000} 
-                    step={5000} 
-                    onValueChange={(val) => {
-                      if (val[0] !== undefined) {
-                        setPriceRange([0, val[0]]);
-                      }
-                    }}
-                  />
+                      <span className="text-xs text-primary font-bold">R$ {priceRange[1]?.toLocaleString() ?? '0'}</span>
+                    </div>
+                    <Slider 
+                      defaultValue={[300000]} 
+                      max={500000} 
+                      step={5000} 
+                      onValueChange={(val) => {
+                        if (val[0] !== undefined) {
+                          setPriceRange([0, val[0]]);
+                        }
+                      }}
+                    />
                   </div>
 
                   <Button className="w-full">Aplicar Filtros</Button>
