@@ -124,8 +124,4 @@ function Index() {
   );
 }
 
-// Simple Car wrapper just to avoid Car not found error in Index component
-function Car(props: any) {
-  return <CarIcon {...props} />;
-}
 import { Car as CarIcon } from "lucide-react";
