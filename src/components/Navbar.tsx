@@ -61,7 +61,7 @@ export function Navbar() {
           <Link to="/" className="block text-base font-medium py-2" onClick={() => setIsMenuOpen(false)}>
             Início
           </Link>
-          <Link to="/" className="block text-base font-medium py-2" onClick={() => setIsMenuOpen(false)}>
+          <Link to="/catalog" className="block text-base font-medium py-2" onClick={() => setIsMenuOpen(false)}>
             Catálogo
           </Link>
           <Link to="/" className="block text-base font-medium py-2" onClick={() => setIsMenuOpen(false)}>
