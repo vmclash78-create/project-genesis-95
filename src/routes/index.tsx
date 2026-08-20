@@ -72,9 +72,11 @@ function Index() {
               <h2 className="text-3xl font-bold tracking-tight">Veículos em Destaque</h2>
               <p className="text-muted-foreground mt-2">Confira as melhores ofertas selecionadas para você.</p>
             </div>
-            <Button variant="ghost" className="hidden sm:flex items-center gap-1 group">
-              Ver Catálogo Completo
-              <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+            <Button variant="ghost" className="hidden sm:flex items-center gap-1 group" asChild>
+              <Link to="/catalog">
+                Ver Catálogo Completo
+                <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Link>
             </Button>
           </div>
 
@@ -85,8 +87,8 @@ function Index() {
           </div>
 
           <div className="mt-8 sm:hidden">
-            <Button variant="outline" className="w-full">
-              Ver Catálogo Completo
+            <Button variant="outline" className="w-full" asChild>
+              <Link to="/catalog">Ver Catálogo Completo</Link>
             </Button>
           </div>
         </section>

@@ -22,7 +22,7 @@ export function Navbar() {
             <Link to="/" className="text-sm font-medium hover:text-primary transition-colors">
               Início
             </Link>
-            <Link to="/" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link to="/catalog" className="text-sm font-medium hover:text-primary transition-colors">
               Catálogo
             </Link>
             <Link to="/" className="text-sm font-medium hover:text-primary transition-colors">
