@@ -21,7 +21,7 @@ interface CarCardProps {
 export function CarCard({ car }: CarCardProps) {
   return (
     <Card className="overflow-hidden group hover:shadow-xl transition-all duration-300">
-      <Link to={`/car/${car.id}`} className="block relative aspect-[16/10] overflow-hidden">
+      <Link to="/car/$carId" params={{ carId: car.id }} className="block relative aspect-[16/10] overflow-hidden">
         <img 
           src={car.image} 
           alt={`${car.make} ${car.model}`}
@@ -63,7 +63,7 @@ export function CarCard({ car }: CarCardProps) {
       
       <CardFooter className="p-4">
         <Button className="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold" asChild>
-          <Link to={`/car/${car.id}`}>Ver Detalhes</Link>
+          <Link to="/car/$carId" params={{ carId: car.id }}>Ver Detalhes</Link>
         </Button>
       </CardFooter>
     </Card>
