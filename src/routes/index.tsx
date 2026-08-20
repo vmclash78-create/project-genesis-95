@@ -109,7 +109,7 @@ function Index() {
               ].map((item, i) => (
                 <div key={i} className="bg-background p-8 rounded-xl border hover:shadow-lg transition-shadow">
                   <div className="h-12 w-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center mb-6">
-                    <Car className="h-6 w-6" />
+                    <CarIcon className="h-6 w-6" />
                   </div>
                   <h3 className="text-xl font-bold mb-3">{item.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
